@@ -156,7 +156,7 @@ valid_datagen <- image_data_generator(rescale = 1/255
 train_generator <- flow_images_from_directory(
   train_dir,                  # Target directory  
   train_datagen,              # Data generator
-  target_size = c(h, w),  # Resizes all images to 250 × 250
+  target_size = c(h, w),  # Resizes all images to 250 Ã— 250
   classes = c("good","bad","worst"),
   batch_size = b_sz,
   class_mode = "binary"       # binary_crossentropy loss for binary labels
@@ -166,7 +166,7 @@ train_generator <- flow_images_from_directory(
 valid_generator <- flow_images_from_directory(
   valid_dir,                  # Target directory  
   valid_datagen,               # Data generator
-  target_size = c(h,w),  # Resizes all images to 250 × 250
+  target_size = c(h,w),  # Resizes all images to 250 Ã— 250
   classes = c("good","bad","worst"),
   batch_size = b_sz,
   class_mode = "binary"       # binary_crossentropy loss for binary labels
@@ -304,7 +304,7 @@ valid_datagen <- image_data_generator(rescale = 1/255)
 train_generator <- flow_images_from_directory(
   train_dir,                  # Target directory  
   train_datagen,              # Data generator
-  target_size = c(h, w),  # Resizes all images to 250 × 250
+  target_size = c(h, w),  # Resizes all images to 250 Ã— 250
   classes = c("cooler","nr"),
   batch_size = 32,
   class_mode = "binary"       # binary_crossentropy loss for binary labels
@@ -314,7 +314,7 @@ train_generator <- flow_images_from_directory(
 valid_generator <- flow_images_from_directory(
   valid_dir,                  # Target directory  
   valid_datagen,               # Data generator
-  target_size = c(h,w),  # Resizes all images to 250 × 250
+  target_size = c(h,w),  # Resizes all images to 250 Ã— 250
   classes = c("cooler","nr"),
   batch_size = 32,
   class_mode = "binary"       # binary_crossentropy loss for binary labels
@@ -396,7 +396,7 @@ test_datagen <- image_data_generator(rescale = 1/255)
 test_generator2 <- flow_images_from_directory(
   testdir_nr,                  # Target directory  
   test_datagen,               # Data generator
-  target_size = c(250, 250),  # Resizes all images to 250 × 250
+  target_size = c(250, 250),  # Resizes all images to 250 Ã— 250
   classes = c("cooler","nr"),
   batch_size = 32,
   class_mode = "binary",       # binary_crossentropy loss for binary labels
@@ -482,7 +482,7 @@ test_datagen <- image_data_generator(rescale = 1/255)
 test_generator <- flow_images_from_directory(
   testdir,                  # Target directory  
   test_datagen,               # Data generator
-  target_size = c(250, 250),  # Resizes all images to 250 × 250
+  target_size = c(250, 250),  # Resizes all images to 250 Ã— 250
    classes = c("good","bad","worst"),
   batch_size = 32,
   shuffle = FALSE
@@ -713,7 +713,7 @@ for(i in 1:206){
 
 test_pics <- flow_images_from_directory(
   testdir,                  # Target directory  
-  target_size = c(250, 250)  # Resizes all images to 250 × 250
+  target_size = c(250, 250)  # Resizes all images to 250 Ã— 250
 )
 
 
